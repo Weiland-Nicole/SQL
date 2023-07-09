@@ -1,0 +1,26 @@
+--Create a clothing store database
+
+/** Clothing Store:
+Tanktops (2)
+Pants (4)
+Blouses (6)
+Shoes (2)
+Bags (4)
+**/
+
+CREATE TABLE clothes (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO clothes VALUES (1, "Tanktops", 2, 10.50);
+INSERT INTO clothes VALUES (2, "Pants", 4, 15.00);
+INSERT INTO clothes VALUES (3, "Blouses", 6, 12.00);
+INSERT INTO clothes VALUES (4, "Shoes", 2, 18.00);
+INSERT INTO clothes VALUES (5, "Bags", 4, 13.00);
+SELECT * FROM clothes;
+
+--display the database ordered by price.
+SELECT * FROM clothes ORDER BY price;
+
+--display the database base by price that is greater than or equal to 13.00.
+SELECT * FROM clothes WHERE price >= 13.00;
+
+
