@@ -391,6 +391,12 @@ SELECT * FROM astronauts WHERE military_branch="US Army"
 --display the database with astonauts in all military branches 
 SELECT * FROM astronauts WHERE military_branch IN ("US Army", "US Navy","US Marine Corps","US Air Force");
 
+--display astronauts having 5 or more space walks 
+SELECT Name, SUM(Space_Walks) AS Total_Space_Walks FROM astronauts
+GROUP BY name
+HAVING Space_Walks > 5;
+
+
 --display database with astronauts greater than 60 years old 
 SELECT * FROM astronauts WHERE Birth_Date> 60
 ORDER BY Birth_Date DESC;
