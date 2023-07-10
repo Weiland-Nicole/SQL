@@ -385,8 +385,8 @@ SELECT avg(Space_Walks_hr) FROM astronauts;
 
 
 --display the database with astronauts in the US Army 
-SELECT * FROM astronauts WHERE military_branch="US Army" 
-;
+SELECT * FROM astronauts WHERE military_branch="US Army"; 
+
 
 --display the database with astonauts in all military branches 
 SELECT * FROM astronauts WHERE military_branch IN ("US Army", "US Navy","US Marine Corps","US Air Force");
@@ -407,4 +407,4 @@ SELECT * FROM astronauts WHERE Status='Retired';
 
 --How many astronauts greater than 60 were deceased?
 /*OR*/
-SELECT * FROM astronauts WHERE Status='Deceased'
+SELECT * FROM astronauts WHERE Status='Deceased';
